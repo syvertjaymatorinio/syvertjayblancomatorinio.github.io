@@ -11,7 +11,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="dropdown.css">
     
 </head>
 <body>
@@ -24,21 +24,53 @@
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas fa-bars"></label>
 
-    <a href="#" class="logo">Shoes<span>.</span></a>
+    
+    <img src="/images/logo.png" alt="logo" class="logo" >
+
 
     <nav class="navbar">
+  
         <a href="#home">home</a>
         <a href="#about">about</a>
-        <a href="#products">products</a>
+        <a href="#featured">featured</a>
+      
+<div class="dropdown1">
+    <a href="#">products</a>
+    
+    <div class="dropdown-content1">
+    <a href="#products">Men's</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    </div>
+  </div>
         <a href="#review">review</a>
         <a href="#contact">contact</a>
+        
     </nav>
-
+   
     <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <a href="#" class="fas fa-user"></a>
-    </div>
+        <div class="icondropdown">
+            <a href="#" class="fas fa-heart"></a>
+            <div class="icondropdown-content">
+                <p>Favorites</p>
+            </div>
+         </div>
+        <div class="icondropdown">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div class="icondropdown-content">
+                <p>Added to Cart</p>
+            </div>
+         </div>
+    
+        <div class="icondropdown">
+        <a href="form.html" class="fas fa-user"></a>
+        <div class="icondropdown-content">
+            <p>Sign-up</p>
+        </div>
+     </div>
+
+      
+
 
 </header>
 
@@ -47,15 +79,21 @@
 <!-- home section starts  -->
 
 <section class="home" id="home">
+    
+ 
 
     <div class="content">
-        <h3>USC's Footwear</h3>
+        
+        <h3 class="animate-character">USC's Footwear</h3>
         <span> Shoes with benefits</span>
         <p> Choose your friends and shoes carefully -
              one wrong choice will give you nothing but discomfort!</p>
-        <a href="#" class="btn">shop now</a>
+             <div class="buttons">
+                <button>Shop Now</button>
+        
+          </div>
     </div>
-    
+
 </section>
 
 <!-- home section ends -->
@@ -69,15 +107,18 @@
     <div class="row">
 
         <div class="video-container">
-            <video src="images/about-vid.mp4" loop autoplay muted></video>
-            <h3>best shoe seller</h3>
+            <video src="featured/Nike AF1 B-roll.mp4" loop autoplay muted></video>
+            <h3 >best shoe seller</h3>
         </div>
+
 
         <div class="content">
             <h3>why choose us?</h3>
             <p>We are the only shop in Cebu City that offers that provides you a high quality of shoes in a low price. </p>
             <p> We have cheap, elegant, stylistic and high quality shoes the is perfect for
                  your school, office as well as for your daily GALA.</p>
+            <p>Shopping online is the best option because going to the mall or supermarket to buy shoes is very inconvenient due to the traffic and risk of theft.</p>
+            <p>We create a method that will allow you to choose your preferred shoe in the fastest and safest way possible.</p>
             <a href="#" class="btn">learn more</a>
         </div>
 
@@ -124,39 +165,173 @@
     </div>
    
 </section>
+  
+
+
+
+ 
+
+
 
 <!-- icons section ends -->
 
 <!-- prodcuts section starts  -->
+<div class="container">
+<section class="featured" id="featured">
 
-<section class="products" id="products">
 
-    <h1 class="heading"> latest <span>products</span> </h1>
-    
-    <h2 class="footwear"> Men's <span>Footwear</span> </h2> 
+    <div id="toggler" class="fas fa-sun"></div>
 
-    <div class="box-container">
+    <div class="boxed-container">
+
+        <h1 class="heading"> <span>featured</span> products </h1>
 
         <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/shoe-1.webp" alt="Air Force 1">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">add to cart</a>
-                    <a href="#" class="fas fa-share"></a>
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="featured/shoe1_1.webp" class="small-img-1" alt="Nike Air Max TW ">
+                    <img src="featured/shoe1_3.webp" class="small-img-1" alt="Nike Air Max TW ">
+                    <img src="featured/shoe1.webp" class="small-img-1" alt="Nike Air Max TW ">
+                    <img src="featured/shoe1_4.jpg" class="small-img-1" alt="Nike Air Max TW ">
+                </div>
+                <div class="big-image">
+                    <img src="featured/shoe1_2.webp" class="big-img-1" alt="Nike Air Max TW ">
                 </div>
             </div>
             <div class="content">
-                <h3>Air Force 1</h3>
-                <div class="price"> ₱ 399 <span> ₱ 500</span> </div>
+            <h3 style="cursor:pointer;">Nike Air Max TW </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p >So you're in love with the classic look of the '90s, but you've got a thing 
+                    for today's fast-paced culture. Meet the Air Max TW. Inspired by the treasured 
+                    franchise that brought Nike Air cushioning to the world and laid the foundation
+                     for the track-to-street aesthetic, its eye-catching design delivers a 1-2
+                      punch of comfort and fashion. Ready to highlight any 'fit, its lightweight
+                       upper pairs angular and organic lines to create an entrancing haptic effect. The contrasting colourways make it easy to style. And if you're ready for the next step, 
+                    the 5 windows underfoot deliver a modern edge to visible Air cushioning.</p>
+         
+
+                <div class="price">₱1,895 <span>₱3,895</span> </div>
+                <a class="btn">add to cart</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="featured/shoe2_1.webp" class="small-img-2" alt="Air NikeMax 95 SE">
+                    <img src="featured/shoe2_2.webp" class="small-img-2" alt="Air NikeMax 95 SE">
+                    <img src="featured/shoe2_3.webp" class="small-img-2" alt="Air NikeMax 95 SE">
+                    <img src="featured/shoe2_4.jpg" class="small-img-2" alt="Air NikeMax 95 SE">
+                </div>
+               <div class="big-image">
+                    <img src="featured/shoe2.webp" class="big-img-2" alt="Air NikeMax 95 SE">
+                </div>
+            </div>
+              
+            <div class="content">
+                <h3> Air NikeMax 95 SE</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> 
+                <p>Playful retro-graphics vibe with layers of '90s athletics aesthetics for a look that celebrates 50 years of Nike innovation. This throwback twist doesn't mean we've stepped back from cutting-edge design—the super-soft Air cushioning and durable construction make it your must-have wardrobe staple for the next 50 years.
+
+                </p>
+                <div class="price"> ₱1,499 <span>₱4,499</span> </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="featured/shoe4_1.webp" class="small-img-3" alt="Nike Air Max Dawn">
+                    <img src="featured/shoe4_2.webp" class="small-img-3" alt="Nike Air Max Dawn">
+                    <img src="featured/shoe4_3.webp" class="small-img-3" alt="Nike Air Max Dawn">
+                    <img src="featured/shoe4_4.webp" class="small-img-3" alt="Nike Air Max Dawn">
+                </div>
+                <div class="big-image">
+                    <img src="featured/shoe4.webp" class="big-img-3" alt="Nike Air Max Dawn">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Nike Air Max Dawn</h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> 
+                <p>Root yourself to sporty athletics DNA with this throwback design. We've included era-echoing fabrics like soft synthetic leather and airy mesh to deliver classic vibes. Modern design lines on the midsole and heel keep your look fresh. Lace up and give your day a look-good forecast.</p>
+                <div class="price"> ₱ 999<span>₱3,595</span> </div>
+                <a href="#" class="btn">add to cart</a>
             </div>
         </div>
 
         <div class="box">
-            <span class="discount">-35%</span>
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="featured/shoe3_1.webp" class="small-img-4" alt="Nike Pegasus 39">
+                    <img src="featured/shoe3_2.webp" class="small-img-4" alt="Nike Pegasus 39">
+                    <img src="featured/shoe3_3.webp" class="small-img-4" alt="Nike Pegasus 39">
+                    <img src="featured/shoe3_4.jpg" class="small-img-4" alt="Nike Pegasus 39">
+                </div>
+                <div class="big-image">
+                    <img src="featured/shoe3.webp" class="big-img-4" alt="Nike Pegasus 39">
+                </div>
+            </div>
+            <div class="content">
+                <h3>Nike Pegasus 39</h3>
+                 <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> 
+                <p>Let the Nike Pegasus 39 help you ascend to new heights. More lightweight up top than the Pegasus 38 and ideal to wear in any season, it has a supportive sensation to help keep your feet contained, while underfoot cushioning and double Zoom Air units (1 more than the Peg 38) give you an extra pop to your step. Your trusted workhorse with wings is back. Time to fly.</p>
+                <div class="price"> ₱1,279 <span>   ₱4,595</span> </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+ </div>
+</section>
+</div>
+
+    
+
+    
+
+<section class="products" id="products">
+    
+    <h1 class="heading"> latest <span>products</span> </h1>
+    
+    <h2 class="footwear"> Men's <span>Footwear</span> </h2> 
+    
+    <div class="box-container">
+        
+
+        <div class="box">
+            <span class="discount">-20%</span>
             <div class="image">
-                <img src="images/shoe-2.webp" alt="Nike Air Max SYSTM">
+                
+                <img src="images/shoe-1.webp" 
+                class="first-img-1"
+                alt="Air Force 1">
+                <template> 
+                <img src="images/shoe-5.webp" 
+                    class="second-img-1"
+                    alt="Air Force 1">
+                </template> 
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="cart-btn">add to cart</a>
@@ -164,7 +339,43 @@
                 </div>
             </div>
             <div class="content">
+            <div class="dropdown">
+                <h3>Air Force 1</h3>
+                <div class="dropdown-content">
+                    <p>                    
+                       Colour Shown: White/White <br>
+                       Style: CW2288-111
+                    </p>
+                </div>
+            </div>
+                     <figcaption>Men's Sneakers <br> Size: 38-46</figcaption>
+                <div class="price"> ₱ 399 <span> ₱ 500</span> </div>
+            </div>
+        </div>
+        
+
+        <div class="box">
+            <span class="discount">-35%</span>
+            <div class="image">
+                <img src="images/shoe-2.webp"  
+                alt="Nike Air Max SYSTM">
+                
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="dropdown">
                 <h3>Nike Air Max SYSTM </h3>
+            <div class="dropdown-content">
+                <p>Colour Shown:Platinum/Black <br>
+                    Style: DM9537-100</p>
+            </div>
+            </div>
+            <figcaption>Men's Shoes <br> Size: 38-43
+            </figcaption>
                 <div class="price"> ₱ 699 <span> ₱ 999</span> </div>
             </div>
         </div>
@@ -180,19 +391,26 @@
                 </div>
             </div>
             <div class="content">
-                <h3>Nike Air Force 1 Mid '07 LX</h3>
+                <div class="dropdown">
+                    <h3> Air Force 1 Mid '07 LX</h3>
+                    <div class="dropdown-content">
+                        <p>Colour Shown: Off-Noir/Black<br>
+                            Style: DQ7666-001</p>
+                    </div>
+                </div>
+                <figcaption>Men's High Cut Shoes br Size:37-45</figcaption>
                 <div class="price"> ₱ 999<span> ₱ 1,499</span> </div>
             </div>
         </div>
     </div>
 
-
-    <h4 class="formal"> Formal <span>Shoes</span> </h4>
-    
+            <h4 class="formal">formal <span>Shoes</span>
+            </h4>
     
     
     <div class="box-container">
-       
+
+        
 
         <div class="box">
             <span class="discount">-20%</span>
@@ -205,7 +423,9 @@
                 </div>
             </div>
             <div class="content">
-                <h3>Depally Men Glossy Tassel Brogue Leather Shoes</h3>
+                <h3>
+                    Mens Glossy Leather Shoes
+                </h3>
                 <div class="price">₱ 599 <span> ₱ 999</span> </div>
             </div>
         </div>
@@ -213,7 +433,7 @@
         <div class="box">
             <span class="discount">-17%</span>
             <div class="image">
-                <img src="images/shoe-5.jpg" alt="New Bright Leather Work Business Pointed Toe Shoes">
+                <img src="images/shoe-5.jpg" alt="Bright Leather Pointed Toe Shoes ">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="cart-btn">add to cart</a>
@@ -221,8 +441,8 @@
                 </div>
             </div>
             <div class="content">
-                <h3>New Bright Leather Work Business Pointed Toe Shoes </h3>
-                <div class="price"> ₱ 899 <span> ₱ 999</span> </div>
+                <h3>Bright Leather Pointed Toe Shoes </h3>
+                <div class="price"> ₱ 699 <span> ₱ 999</span> </div>
             </div>
         </div>
 
@@ -255,7 +475,16 @@
                 </div>
             </div>
             <div class="content">
+            <div class="dropdown">
                 <h3>Nike Air Deldon 'Together We Fly'</h3>
+                <div class="dropdown-content">
+                    <p>                    
+                        Colour Shown: Summit White <br>
+                        Style: DM4094-100
+                    </p>
+                </div>
+            </div>
+            <figcaption>Men's Basketball Shoes <br>Size: 35-45 </figcaption>
                 <div class="price">₱ 1,499<span>₱ 2,499</span> </div>
             </div>
         </div>
@@ -271,7 +500,14 @@
                 </div>
             </div>
             <div class="content">
-                <h3>Air Jordan XXXVII PF</h3>
+                <div class="dropdown">
+                    <h3>Air Jordan <br> XXXVII PF</h3>
+                    <div class="dropdown-content">
+                       <p> Colour Shown: Light Bone <br>
+                        Style: DD6959-060 </p>
+                    </div>
+                </div>
+                <figcaption>Men's Basketball Shoes <br>Size: 36-44 </figcaption>
                 <div class="price"> ₱ 1,999 <span> ₱ 3,499</span> </div>
             </div>
         </div>
@@ -287,14 +523,27 @@
                 </div>
             </div>
             <div class="content">
-                <h3>KD Trey 5 X EP  </h3>
+                <div class="dropdown">
+                <h3>KD Trey 5 <br> X EP  </h3>
+                <div class="dropdown-content">
+                    <p>Colour Shown: Black/Light Crimson
+                        Style: DJ7554-011</p>
+                </div>
+                </div>
+                <figcaption>Men's Basketball Shoes <br>
+                            Size: 38-48
+
+                </figcaption>
+
                 <div class="price"> ₱ 1,999<span>₱ 2,999</span> </div>
             </div>
         </div>
     
 
+    
 
 <h2 class="footwear"> Women's <span>Footwear</span> </h2>
+        
         <div class="box-container">
 
             <div class="box">
@@ -308,14 +557,14 @@
                     </div>
                 </div>
                 <div class="content">
+                    <div class="dropdown">
                     <h3>Nike Air Force 1 '07 Next Nature</h3>
-                    <details> 
-                        <summary>Product Description</summary>
-                        <p>Euro size basis <br> 
-                            36 to 45 <br>
-                            It comes with the box. <br>  </p>
-                    </details>
-                    <figcaption>Women's Shoes <br> 4 colors</figcaption>
+                    <div class="dropdown-content">
+                     <p>Colour Shown: White/Blue<br>
+                            Style: DN1430-104</p>
+                     </div>                 
+                </div>
+                    <figcaption>Women's Shoes <br> "1 Colour"</figcaption>
 
                     <div class="price"> ₱ 499 <span> ₱ 599</span> </div>
                 </div>
@@ -332,8 +581,18 @@
                     </div>
                 </div>
                 <div class="content">
+                    <div class="dropdown">
                     <h3>Air Jordan 2 Retro Low Titan </h3>
+
+                        <div class="dropdown-content">
+                            <p>Colour Shown: Safety Orange <br>
+                                Style: DV6206-183</p>
+                        </div>
+                    </div>
+                    <figcaption>Women's Shoes <br> "1 Colour"</figcaption>
+
                     <div class="price"> ₱ 499 <span> ₱ 699</span> </div>
+             
 
                 </div>
             </div>
@@ -349,7 +608,14 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Nike Air Max 97</h3>
+                    <div class="dropdown">
+                    <h3>Nike Air Max <br> 97 SE</h3>
+                        <div class="dropdown-content">
+                            <p>Colour Shown: Grey/White <br>
+                                Style: DX3279-010</p>
+                        </div>
+                    </div>
+                    <figcaption>Women's Shoes <br> "1 Colour"</figcaption>
                     <div class="price"> ₱ 699 <span> ₱ 999</span> </div>
 
                 </div>
@@ -367,7 +633,7 @@
             <div class="box">
                 <span class="discount">-20%</span>
                 <div class="image">
-                    <img src="images/women-4.jpg" alt="Black School Shoes With Heels">
+                    <img src="images/women's.jpg" alt="Mario D' Boro Runway">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="cart-btn">add to cart</a>
@@ -375,8 +641,17 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Black <br> School Shoes <br> with Heels</h3>
-                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    <div class="dropdown">
+                    <h3> Mario D' Boro Runway</h3>
+                    <div class="dropdown-content">
+                        <p> Colour: Black <br>
+                            Size     : 35 - 42
+                            
+                        </p>
+
+                    </div>
+                    </div>
+                    <figcaption>LV 22209A <br> Black School Shoes.z</figcaption>
 
                     <div class="price"> ₱ 399 <span> ₱ 599</span> </div>
 
@@ -386,7 +661,7 @@
             <div class="box">
                 <span class="discount">-17%</span>
                 <div class="image">
-                    <img src="images/women-5.jpg" alt="3 inches block heels black fashion school shoes">
+                    <img src="images/women's 1.jpg" alt="Cardam's Lifestyle">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="cart-btn">add to cart</a>
@@ -394,8 +669,16 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>3 inches block heels black fashion school shoes</h3>
-                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    <div class="dropdown">
+                    <h3>Cardam's Lifestyle</h3>
+                        <div class="dropdown-content">
+                          <p>  Colour: Black <br>
+                            Size     : 38
+                            </p>
+                        </div>
+                    </div>
+                 
+                    <figcaption>ECLB RSS 00111 <br> Black School Shoes.</figcaption>
 
 
                     <div class="price"> ₱ 399 <span> ₱ 599</span> </div>
@@ -406,7 +689,7 @@
             <div class="box">
                 <span class="discount">-3%</span>
                 <div class="image">
-                    <img src="images/women-6.jpg" alt="  Vintage Lace Up Round Toe Oxford Shoe">
+                    <img src="images/women's 2.png" alt="  Vintage Lace Up Round Toe Oxford Shoe">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="cart-btn">add to cart</a>
@@ -414,11 +697,16 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>
-                      Vintage Lace
-                         Up Round Toe Oxford Shoe
+                  <div class="dropdown">
+                    <h3>Meet My Feet
                     </h3>
-                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    <div class="dropdown-content">
+                        <p> Colour: Black <br>
+                            Size : 33 - 40
+                            </p>
+                    </div>
+                  </div>
+                    <figcaption>DFC 4BKSC 01E73CGS <br> School Shoes for Girls</figcaption>
 
                     <div class="price"> ₱ 499 <span> ₱ 999</span> </div>
 
@@ -437,11 +725,16 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Armani Exchange 
-                        lace up sneakers
-                    </h3>
+                    <div class="dropdown">
+                      <h3>Nike Winflo 8</h3>
+                      <div class="dropdown-content">
+                        <p>Colour Shown: White/Bright Crimson <br>
+                            Style: CW3421-100</p>
 
-                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                      </div>
+                    </div>
+
+                    <figcaption>Womens Road <br> Runnning Shoes</figcaption>
 
                     <div class="price"> ₱ 499 <span> ₱ 999</span> </div>
 
@@ -459,8 +752,16 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Comfortable Non-slip square hills</h3>
-                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    <div class="dropdown">
+                        <h3>Nike Renew Run 2</h3>
+                        <div class="dropdown-content">
+                            <p>Colour Shown: Champagne/Light Violet
+                                Style: CU3505-602</p>
+                        </div>
+                    </div>
+            
+                    <figcaption>Womens Road <br> Runnning Shoes</figcaption>
+
 
                     <div class="price"> ₱ 499 <span> ₱ 999</span> </div>
 
@@ -478,17 +779,27 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Sneakers Suede Leather Flats Shoes</h3>
-                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                    <div class="dropdown">
+                        <h3>  Nike Flex Run 10</h3>
+                        <div class="dropdown-content">
+                           <p> Colour Shown: White/Green Glow
+                            Style: CI9964-101 </p>
+                        </div>
+                    </div>
+                      <figcaption>Womens Road <br> Runnning Shoes</figcaption>
                     <div class="price"> ₱ 499 <span> ₱ 999</span> </div>
 
                 </div>
             </div>   
-    
+
+            
 
     </div>
 
 </section>
+
+
+
 
 <!-- prodcuts section ends -->
 
@@ -580,7 +891,7 @@
         </form>
 
         <div class="image">
-            <img src="images/" alt="cards availlable">
+            <img src="images/model shoe.webp" alt="cards availlable">
         </div>
 
     </div>
@@ -610,15 +921,6 @@
             <a href="#">my order</a>
             <a href="#">my favorite</a>
         </div>
-
-        <div class="box">
-            <h3>locations</h3>
-            <a href="#">Cebu City</a>
-            <a href="#">Canlaon City</a>
-            <a href="#">Manila</a>
-            <a href="#">Mandaue City</a>
-        </div>
-
         <div class="box">
             <h3>contact info</h3>
             <a href="#">(+63)970-7201-905</a>
@@ -627,31 +929,32 @@
             <img src="images/payment.png" alt="">
         </div>
 
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Cebu City</a>
+            <a href="#">Canlaon City</a>
+            <a href="#">Manila</a>
+            <a href="#">Mandaue City</a>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.8573736658
+        327!2d123.91422226386251!3d10.353287242609518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+        !3m3!1m2!1s0x33a9989329c08267%3A0xe88be3a816481ffe!2sSan%20Alberto%20Formation%20Center%
+        2C%20Cebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1670567169654!5m2!1sen!2sph" 
+        width="600" height="450" style="border:0;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
     </div>
 
-    <div class="credit"> created by <span> Syvert Jay Matorinio </span> | all rights reserved </div>
+  </div>
+  <div class="credit"> created by <span> Syvert Jay Matorinio </span> | all rights reserved </div>
 
 </section>
+<script>
 
+</script>
 <!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    <script src="script.js"></script>
 </body>
 </html>
